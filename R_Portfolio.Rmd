@@ -1,12 +1,9 @@
 ---
-title: "Portfólio de R"
-author: "Jurandir Ventura"
-date: "02/02/2020"
-Moved to Github on: "01/06/2020" 
-output: R Markdown
-  pdf_document: default
+output:
   html_document: default
+  R Markdown: default
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -738,7 +735,7 @@ Agora podemos usar funções para outras finalidades, como manipulação de arqu
 #diretórios
   
 #aqui verificamos qual é o diretório de trabalho que o R usa. Assim quando usamos arquivos, seja para salvar ou abrir, usamos este diretório como "Default".
-  setwd("C:/Users/BRJUVEN1/iCloudDrive/MBA_Pós/FIAP/IA e Machine Learning/04 IA com R/Trabalhos/Portfolio")
+  setwd("C:/Users/BRJUVEN1/iCloudDrive/Documents/GitHub/R_Language")
   getwd()
 
 #Podemos mudar o diretório de trabalho, com a função abaixo:
@@ -779,15 +776,15 @@ Agora podemos usar funções para outras finalidades, como manipulação de arqu
   #Funções para ler tabela
   
   library(readr)
-  read.table(file = 'Copas.csv', sep=',',header = TRUE)
+  read.table(file = 'JVData/Copas.csv', sep=',',header = TRUE)
 
   
   #Funções para ler tabela. Código gerado pelo Import DataSet... (Opção em Files, selecionando direto o arquivo)
   library(readr)
-  Copas_Jogadores <- read_csv("Copas-Jogadores.csv")
+  Copas_Jogadores <- read_csv("JVdata/Copas-Jogadores.csv")
   View(Copas_Jogadores)
 
-  Copas_Partidas <- read_csv("Copas-Partidas.csv")
+  Copas_Partidas <- read_csv("JVdata/Copas-Partidas.csv")
   View(Copas_Partidas)
   
   
@@ -799,7 +796,7 @@ Agora podemos usar funções para outras finalidades, como manipulação de arqu
   
   library(readxl)
   getwd()
-  cameras_baltimore <- read_excel("cameras.baltimore.xlsx")
+  cameras_baltimore <- read_excel("JVdata/cameras.baltimore.xlsx")
   View(cameras_baltimore)
   
   #Aqui usamos algumas funções para manipular informações dos arquivos. Como máximo e mínimo.
@@ -809,7 +806,7 @@ Agora podemos usar funções para outras finalidades, como manipulação de arqu
   View(Oeste<-cameras_baltimore[which.min(cameras_baltimore$Long),])
   
   #Lendo um arquivo de imagem do tipo jpg.
-  read_file('R Logo.jpg')
+  read_file('JVdata/RLogo.jpg')
   
 ```
 
@@ -937,31 +934,31 @@ as.POSIXlt.POSIXct(Test1, tz = "America/Sao_Paulo")
 
 
 # Instala pacote swirl
-install.packages("swirl")
-library(swirl)
+#install.packages("swirl")
+#library(swirl)
 
 
 # Instala curso
-library(swirl)
-uninstall_course('Aprenda_R_no_R')
-install_course_github('elthonf','Aprenda_R_no_R')
+#library(swirl)
+#uninstall_course('Aprenda_R_no_R')
+#install_course_github('elthonf','Aprenda_R_no_R')
 
 # Inicia os cursos interativos
-swirl()
+#swirl()
 ```
 
 
 ```{r}
 # Inicia os cursos interativos para novas sessões
-library(swirl)
-select_language(language = 'portuguese')
-swirl()
+#library(swirl)
+#select_language(language = 'portuguese')
+#swirl()
 
 
 # Outros comandos
-library(swirl)
-bye()
-info()
+#library(swirl)
+#bye()
+#info()
 Sys.setlocale("LC_ALL", 'en_US.UTF-8')
 
 ```
