@@ -66,7 +66,7 @@ A seguir vamos fazer a instalação de vários pacotes do R. Alguns são utiliza
 
 
 #Pacotes importantes para uso do R:
-
+```{r}
 install.packages('swirl')
 install.packages('gridExtra')
 install.packages('corrplot')
@@ -94,7 +94,7 @@ install.packages('plotly')
 install.packages('plot3D')
 install.packages('readxl')
 install.packages('fractional')
-
+```
 
 
 
@@ -735,7 +735,7 @@ Agora podemos usar funções para outras finalidades, como manipulação de arqu
 #diretórios
   
 #aqui verificamos qual é o diretório de trabalho que o R usa. Assim quando usamos arquivos, seja para salvar ou abrir, usamos este diretório como "Default".
-  setwd("C:/Users/BRJUVEN1/iCloudDrive/Documents/GitHub/R_Language")
+  setwd("C:/Users/BRJUVEN1/Documents/GitHub/R_MyXperience")
   getwd()
 
 #Podemos mudar o diretório de trabalho, com a função abaixo:
